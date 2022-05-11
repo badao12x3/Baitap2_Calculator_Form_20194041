@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mssv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MSSV"
+                android:textColor="@android:color/system_accent1_600"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_mssv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="20194041"
+                android:inputType="number"
+                android:maxLength="8" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Họ và tên"
+                android:textColor="@android:color/system_accent1_600"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phạm Văn Hân"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/cccd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số CCCD"
+                android:textColor="@android:color/system_accent1_600"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_cccd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="001201006666"
+                android:inputType="phone"
+                android:maxLength="12" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại"
+                android:textColor="@android:color/system_accent1_600"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="0987654321"
+                android:inputType="number"
+                android:maxLength="10" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@android:color/system_accent1_600"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="han.pv194041@sis.hust.edu.vn"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngày sinh"
+                android:textColor="@android:color/system_accent1_600"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_birthday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:hint="10/10/2001"
+                    android:inputType="textPersonName" />
+
+                <ImageButton
+                    android:id="@+id/btn_birthday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    app:srcCompat="@android:drawable/ic_menu_today" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/adress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quê quán"
+                android:textColor="@android:color/system_accent1_600"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Đống Đa - Hà Nội"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/newadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nơi ở hiện tại"
+                android:textColor="@android:color/system_accent1_600"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="DHBK Hà Nội"
+                android:inputType="textMultiLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nganh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ngành học hiện tại"
+                    android:textColor="@android:color/system_accent1_600"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/khmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khoa học máy tính" />
+
+                    <RadioButton
+                        android:id="@+id/ktmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kỹ thuật máy tính" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/programlang"
+                    android:layout_width="83dp"
+                    android:layout_height="match_parent"
+                    android:text="Ngôn ngữ lập trình"
+                    android:textColor="@android:color/system_accent1_600"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/java"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Java" />
+
+                <CheckBox
+                    android:id="@+id/cs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C#" />
+
+                <CheckBox
+                    android:id="@+id/python"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Python" />
+
+                <CheckBox
+                    android:id="@+id/Kotlin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kotlin" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:text="Tôi đã đọc và đồng ý điều khoản"
+                android:textColor="@android:color/system_accent1_600"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nộp"
+                android:backgroundTint="@color/btn_submit_background_color"
+                android:textColor="@color/btn_submit_text"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
